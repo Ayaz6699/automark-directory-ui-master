@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ff0000">
+
+    <meta name="onesignal" content="wordpress-plugin">
+    <link rel="manifest" href="https://www.automark.pk/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script>
+      (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+      c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+      c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+      _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+      (window,document,"script","5b2e25ab6c08310e224948a9");
+  </script>
+  
+    <script src="https://cdn.logrocket.io/LogRocket.min.js" crossorigin="anonymous"></script>
+    <script>window.LogRocket && window.LogRocket.init('1wcizv/automark');</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17971208-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-17971208-1');
+    </script>
+    <script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+        OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl("https://www.automark.pk");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['appId'] = '6ae34709-dc5b-4cbf-828a-f02407522697';
+        oneSignal_options['autoRegister'] = true;
+        oneSignal_options['welcomeNotification'] = { };
+        oneSignal_options['welcomeNotification']['title'] = "";
+        oneSignal_options['welcomeNotification']['message'] = "";
+        oneSignal_options['path'] = "https://www.automark.pk/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+        oneSignal_options['promptOptions'] = { };
+        OneSignal.init(window._oneSignalInitOptions);
+      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+          documentInitOneSignal();
+      }
+      else {
+          window.addEventListener("load", function(event){
+              documentInitOneSignal();
+          });
+      }
+    </script>
+    <title>Automark Professional Directory - Linkbook</title>
+    <meta name="description" content="a new Job and Professional Website, please fill the form below with as much information as possible. Once our job website is done and new job postings will start coming you can apply to them."/>
+    <meta property="og:image" content="https://www.automark.pk/wp-content/uploads/2018/02/Automark_New_logo.jpg" />
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script type='text/javascript'>
+    function onLinkedIn(){
+      
+    }
+    </script>
+    <script type="text/javascript" src="//platform.linkedin.com/in.js">
+      api_key:  81fd49jjbco0tf
+      onLoad:   onLinkedIn
+    </script>
+    <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script src="%PUBLIC_URL%/js/aws-sdk.min.js"></script>
+    <script type="text/javascript">
+      // Initialize the Amazon Cognito credentials provider
+      AWS.config.region = 'ap-southeast-1'; // Region
+      AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+          IdentityPoolId: 'ap-southeast-1:c7fb6c35-5fa8-4de3-8dbc-cacdde2395c5',
+      });
+
+      var s3 = new AWS.S3({
+        apiVersion: '2006-03-01',
+        params: {Bucket: 'mustafabucket'}
+      });
+    </script>
+    <script type="text/javascript">window.$crisp=[];$crisp.push(["safe",true]);window.CRISP_WEBSITE_ID="da0c1e85-a8a5-467a-8a81-1ccf5d0b2f66";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  </body>
+</html>

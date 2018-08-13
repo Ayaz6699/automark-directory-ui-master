@@ -1,0 +1,40 @@
+{
+  "emailAddress": "mustafahanif627@gmail.com",
+  "formattedName": "Mustafa Hanif",
+  "headline": "Frontend Engineer at Dubizzle",
+  "id": "zI5gTromOM",
+  "industry": "Computer Software",
+  "location": {
+    "country": {"code": "ae"},
+    "name": "United Arab Emirates"
+  },
+  "pictureUrl": "https://media.licdn.com/mpr/mprx/0_SEVdfpIFwyrWIm_Xi2EsfxW5bx9XIm-XiaanfxsBZJGqqoLk3uoLT0aMWtnReW1HuW4ch4e5Fx5F",
+  "positions": {
+    "_total": 1,
+    "values": [{
+      "company": {
+        "id": 265005,
+        "industry": "Online Publishing",
+        "name": "dubizzle",
+        "size": "51-200",
+        "type": "Privately Held"
+      },
+      "id": 932512322,
+      "isCurrent": true,
+      "location": {
+        "country": {
+          "code": "ae",
+          "name": "United Arab Emirates"
+        },
+        "name": "Dubai, United Arab Emirates"
+      },
+      "startDate": {
+        "month": 1,
+        "year": 2017
+      },
+      "summary": "Working mainly on front-end technologies and user facing interfaces.",
+      "title": "Software Engineer"
+    }]
+  },
+  "summary": "6+ year experience\nEmail Address: mustafahanif627@gmail.com\nPhone Number: +971521672494\nSkype: mustafahanif\n\n\u2022\tFull Stack Developer Frontend Developer with expertise in HTML5, CSS and JS. \n\u2022\tWorked on ReactJS, AngularJS, EmberJS  and several other JS frameworks. \n\u2022\tWorked on MeteorJS and ReactJS.\n\u2022\tWorked on Bootstrap and SemanticUI\n\u2022\tBackend engineer on JAVA, ASP.NET, C#, PHP, NodeJS, Ruby on Rails  \n\u2022\tDesigned Scalable systems on Play Framework in JAVA\n\u2022\tMobile development in Android JAVA, Titanium, PhoneGap, Sencha\n\u2022\tDatabase design in MySQL and Microsoft SQL Server\n\u2022\tKnowledge of FreeSwitch.  \n\u2022\tKnowledge of DevOPs on Linux, Ubuntu and CentOS.  \n\u2022\tCloud knowledge of DigitalOcean and Amazon AWS. \n\u2022\tGame Development on Unity3D"
+}

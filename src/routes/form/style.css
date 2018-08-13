@@ -1,0 +1,40 @@
+.brownbg {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.progressval {
+  background-color: rgb(127, 211, 127);
+  padding: 5px;
+  width: 40%;
+  transition: 200ms all;
+}
+.form-progress {
+  position: sticky;
+  top: 0;
+  
+  color: white;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid rgb(27, 161, 0);
+  margin-bottom: 30px;
+  width: 100%;
+  font-weight: 700;
+}
+.h4message {
+  line-height: 34px;
+  font-weight: 300;
+  margin: 27px 0;
+}
+.green-box {
+  background-color: #36a739;
+  color: white;
+  font-size: 26px;
+  padding: 24px;
+  margin: 24px 50px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 1px 1px 20px 0px black;
+}
+.red-box {
+  color: red;
+  text-align: center;
+}

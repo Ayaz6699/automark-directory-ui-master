@@ -1,0 +1,27 @@
+deploy:
+  image: node:latest
+  environment:
+    name: production
+    url: https://www.automark.pk/linkbook
+  only:
+    - master    
+  script:
+  - npm install
+  - npm run build
+  - apt-get update
+  - apt-get install ncftp
+  - ncftpput -R -v -u "automar7" -p "*OB&BGe5KR3Rly7WW9" uk44.siteground.eu public_html/linkbook/ build/*
+
+pages:
+  image: alpine:latest
+  environment: staging
+  script:
+  - npm install
+  - npm run build
+  - mkdir -p ./public
+  - cp -R ./build/* ./public/
+  artifacts:
+    paths:
+    - public
+  except:
+  - master
